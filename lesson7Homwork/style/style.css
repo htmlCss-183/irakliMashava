@@ -1,0 +1,288 @@
+body {
+    background-color: rgba(29, 28, 28, 0.679);
+    
+}
+
+header {
+    background-color: #a72929;
+}
+
+.logo #lText {
+    font-family:'Skranji', serif ;
+    color: bisque;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    background-color: #a72929d2;
+    text-shadow:#d5d819 2px -2px 3px;
+    position: relative;
+    left: 5px;
+    
+}
+.logo #lText:hover {
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 50px; 
+    background-color: #a72929d2;  
+}
+
+.ollogo {
+    display: flex;
+    background: #a72929;
+    flex-shrink: 0;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+
+}
+
+.navmenu a {
+    padding-right: 30px;
+    position: relative;
+    right: 100px;}
+
+.navmenu a {
+    text-decoration: none;
+    color: bisque;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    padding-left: 30px;
+    position: relative;
+    right: 100px;
+    background-color: #a72929;
+    font-family: Verdana, sans-serif ;
+    border-radius:50px ;
+}
+
+
+
+
+.navmenu a:hover {
+    background-color: #500c0c;
+    transition: 300ms ease-in ;
+}
+
+.navmenu {
+    background-color: #a72929;
+}
+
+.texti {
+    background: none;
+}
+
+.texti p {
+    background: none;
+    color: #efaa56;
+    position: relative;
+    left: 150px;
+    font-family: Georgia, serif;
+}
+
+.texti h1 {
+    font-family: 'Rubik Moonrocks', sans-serif;
+    text-align: center;
+    background: none;
+    color:#efaa56;
+}
+
+.cxrili {
+    font-size: 50px;
+    position: relative;
+    left: 500px;
+    text-align: center;
+    color: #efaa56;
+    background-color: aliceblue;
+}
+
+.cxrili #megruli {
+    background-color: #a72929;
+}
+.cxrili #megruli:hover {
+    background-color:#561111;
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+
+.cxrili #rachuli {
+    background-color: #a72929;
+}
+
+.cxrili #rachuli:hover {
+    background-color:#561111;
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+
+}
+
+.cxrili #svanuri {
+    background-color: #a72929;
+}
+
+.cxrili #svanuri:hover {
+    background-color:#561111;
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+
+}
+#images {
+    display: grid;
+    position: relative;
+    height: 40px;
+    position: fixed;
+
+}
+/*
+
+.images #imgone:hover {
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+.images #imgtwo:hover {
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+.images #imgthree:hover {
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+.images #imgfour:hover {
+    transform: scale(1.02);
+    transition: 300ms ease-in ; 
+}
+
+*/
+.combox {
+position: relative;
+left: 500px;
+width: 100%;
+height: 150px;
+padding: 15px 20px;
+}
+
+.combox #comment {
+    width: 700px;
+    height: 400px;
+    padding: 15px 20px ;
+    padding-bottom: 400px ;
+    border-radius: 2px;
+
+}
+.combox h2 {
+    color:#efaa56 ;
+}
+
+.combox #but1 {
+    border: 0;
+    padding: 10px; 
+    background: rgb(241, 3, 3);
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+}
+.combox #but1:hover {
+    background-color:#561111;
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+.combox #but2 {
+    border: 0;
+    padding: 10px; 
+    background: #03f127;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    left:510px
+}
+.combox #but2:hover {
+    background-color:#064d11;
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+.combox img {
+    border-radius: 360%;
+}
+.combox i {
+position: relative;
+right: 130px;
+top: 50px;
+color: #d5d819;
+}
+.comfoto{
+    display: flex;
+    
+}
+
+.footer {
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30xp;
+    letter-spacing: 1px;
+}
+.col-1 a {
+    display: flex;
+    text-decoration: 0;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
