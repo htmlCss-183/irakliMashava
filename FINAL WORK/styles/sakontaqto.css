@@ -1,0 +1,202 @@
+/* headeri */
+body{
+    background-image: url("/image/sky.png");
+    background-size: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5px;
+    background-color:#2a195d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: black 4px 4px 4px;
+}
+
+.logo {
+    font-size: 32px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 100px;
+    font-family:Courier, monospace, 'Courier New';
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 50px;
+    font-family:Courier, monospace, 'Courier New';
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    right: 25px;
+    height:30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.box input {
+    outline: none;
+    border: none;
+}
+.navbara{
+    width: 100px;
+    position: relative;
+    right: 50px;
+    background-color: #2a195d;
+    color: #fff;
+    font-size:18px ;
+    border-color: #2a195d;
+    
+}
+
+/* main*/
+
+.facebook , .instagram , .twitter, .watsapp {
+    border: 5px solid #2a195d;
+    margin: 5px 25px;
+    border-radius: 15px;
+}
+
+.main{
+    padding-top: 100px;
+    display: flex;
+    margin: 20px 10px;
+    height: 500px;
+    justify-content: center;
+}
+.image{
+    margin: auto;
+    height: 300px;
+    padding: 5px;
+}
+h2 , p{
+    text-align: center;
+    margin-top: 15px;
+    color: #ffffff;
+}
+.buttom {
+    display: flex;
+    text-decoration: none;
+    margin: 10px 70px;
+    border: 2px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #2a195d;
+    color: #fff;
+    padding: 5px 20px;
+}
+.buttom:hover {
+        transform: scale(1.02);
+        transition: 300ms ease-in ;
+        background: #150b31;
+}
+
+.facebook , .instagram, .twitter, .watsapp{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px ;   
+
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    padding: 10px 5% ;
+    background: #2a195d;
+    color: #efefef;
+    display: flex;
+    height:250px;
+}
+
+.footer div {
+    text-align: center;
+    
+}
+
+.col-2 {
+    flex-grow: 2;
+    
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+.col-1 a {
+    display: flex;
+    text-decoration: 0;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
