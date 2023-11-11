@@ -1,0 +1,311 @@
+/* headeri */
+body{
+    background-image: url("/image/sky.png");
+    background-size: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5px;
+    background-color:#2a195d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: black 4px 4px 4px;
+}
+
+.logo {
+    font-size: 32px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 100px;
+    font-family:Courier, monospace, 'Courier New';
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 50px;
+    font-family:Courier, monospace, 'Courier New';
+
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    right: 25px;
+    height:30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.box input {
+    outline: none;
+    border: none;
+}
+.navbara{
+    width: 100px;
+    position: relative;
+    right: 50px;
+    background-color: #2a195d;
+    color: #fff;
+    font-size:18px ;
+    border-color: #2a195d;
+    
+}
+
+/* main */
+
+.Container{
+   margin-top: 100px;
+   overflow: hidden;
+}
+
+.BMW, .AUDI, .Ferrari {
+    display: flex;
+}
+.Container img:hover {
+    transform: scale(1.02);
+    transition: 300ms ease-in ;
+}
+
+
+.BMW p , .AUDI p , .Ferrari p {
+   overflow: hidden;
+   position: relative;
+   font-family:Courier, monospace, 'Courier New';
+   left: 40px;
+   top: 50px;
+   color: #fff;
+
+}
+
+.MERCEDESS, .supra, .GTR {
+    display: flex;   
+}
+
+.MERCEDESS p , .supra p , .GTR p {
+    overflow: hidden;
+    position: relative;
+    font-family:Courier, monospace, 'Courier New';
+    top: 50px;
+    color:#fff;
+}
+
+.Container img{
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+/* footet */
+
+.footer {
+    position: relative;
+    padding: 10px 5% ;
+    background: #2a195d;
+    color: #efefef;
+    display: flex;
+    height:250px;
+}
+
+.footer div {
+    text-align: center;
+    
+}
+
+.col-2 {
+    flex-grow: 2;
+    
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+.col-1 a {
+    display: flex;
+    text-decoration: 0;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+
+    .header {flex-basis: auto;}
+
+    .Container{
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .BMW p , .AUDI p , .Ferrari p {
+        overflow: hidden;
+        position: relative;
+        font-family:Courier, monospace, 'Courier New';
+        left: 0px;
+        top: 10px;
+        color: #fff;
+    }
+    .BMW {
+        margin-top: 140px;
+    }
+
+    .AUDI, .Ferrari{
+        margin-top: 40px;
+    }
+    body{background:#2a195d}
+
+
+    .img {
+        margin-top: 20px;
+        width:300px;
+        height: 200px;
+    }
+
+    .BMW, .AUDI, .Ferrari {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MERCEDESS, .supra, .GTR {
+        order: 1;
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .MERCEDESS img, .supra img, .GTR img{
+        width: 0;
+        height: 0;   
+    }
+    
+    #MERC, #SUP, #GT
+    {
+        margin-top: 40px;
+        width: 300px;
+        height: 200px;
+    }
+    .footer {flex-basis: auto;}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .header {
+        flex-basis: auto;
+    }
+
+    .BMW p , .AUDI p , .Ferrari p {
+        overflow: hidden;
+        position: relative;
+        font-family:Courier, monospace, 'Courier New';
+        left: 0px;
+        top: 10px;
+        color: #fff;
+    }
+
+    .AUDI, .Ferrari{
+        margin-top: 40px;
+    }
+    body{background:#2a195d}
+
+
+    .img {
+        margin-top: 30px;
+        width:500px;
+        height: 350px;
+        position: relative;
+        left: 20%;
+    }
+
+    .BMW, .AUDI, .Ferrari {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MERCEDESS, .supra, .GTR {
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .MERCEDESS img, .supra img, .GTR img{
+        width: 0;
+        height: 0;   
+    }
+    
+    #MERC, #SUP, #GT
+    {
+        margin-top: 40px;
+        width:500px;
+        height: 350px;
+        display: flex;
+        position: relative;
+        left: 20%;
+        
+    }
+    .footer {flex-basis: auto;}
+
+}
